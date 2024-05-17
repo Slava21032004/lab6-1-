@@ -1,0 +1,127 @@
+.dots-icon1 {
+  animation: animation1 3s infinite alternate;
+}
+.dots-icon2 {
+  animation: animation2 3s infinite alternate;
+}
+@keyframes animation1 {
+  from {
+    fill: blue;
+  }
+  to {
+    fill: skyblue;
+  }
+}
+@keyframes animation2 {
+  from {
+    fill: red;
+  }
+  to {
+    fill: pink;
+  }
+}
+.container1 {
+ min-height: 700px; 
+ display: grid;    
+ grid-template-columns: repeat(auto-fit, minmax(2, 50%));    
+ grid-template-rows: repeat(2, 50%);
+ grid-column-gap: 15px;    
+}
+.container2 {
+ min-height: 500px; 
+ display: grid;    
+ grid-template-columns: repeat(auto-fit, minmax(4, 25%));    
+ grid-template-rows: repeat(2, 50%);
+ grid-column-gap: 15px;    
+ grid-row-gap: 15px;    
+ margin-top: 15px;    
+}
+img{
+  height: 100%;
+  width: 100%;
+}
+div{
+ -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+.one, .two, .three{
+ border: 5px solid transparent;
+ max-width: 100%; 
+ height: 100%;
+ padding: 10px;    
+}
+.one:hover {
+border: 5px solid #B0CBC4;
+background-color: blue;
+border-top-left-radius: 100% 20px;
+border-bottom-right-radius: 100% 20px;
+}
+.two:hover {
+  border: 5px inset #9F908F;
+  background-color: blue;
+}
+.three {
+  background-color: chocolate;
+  border: 5px solid green;
+  outline: 5px solid transparent;
+}
+.three:hover {
+  outline: 5px solid #000080;
+  outline-offset: 5px;
+}
+.box {
+  width: auto; 
+  margin: 0 auto 100px; 
+  position: relative;
+}
+.item1 {   
+ grid-column: 1; 
+ grid-row: 2;
+}
+.item2 {
+/*
+ grid-column: 2; 
+ grid-row: 1;    
+ background-color: blue;
+ color: gold;
+ display: grid;
+ justify-content: center;
+ align-items: center;       
+*/
+grid-column: 2; 
+grid-row: 2;
+}
+.item3 {
+ grid-column: 1; 
+ grid-row: 1;
+}
+.item4 {
+ grid-column: 2; 
+ grid-row: 1;
+}
+.item5 {
+ grid-column: 3; 
+ grid-row: 1;
+}
+.item6 {
+ grid-column: 4; 
+ grid-row: 1;
+}
+.dots1{
+ grid-column: 1;
+ grid-row: 1;
+ margin-top: 140px;    
+}
+.dots2{
+ grid-column: 4;
+ grid-row: 1;
+ margin-top: 120px;   
+    
+}
+@media (min-width: 450x) {
+    .container2 {
+     display:none;
+    }  
+}
